@@ -15,7 +15,7 @@ class Teacher(Person):
 
 
     def give_mark(self, student):
-        print("Teacher gave grade to", student.name)]
+        print("Teacher gave grade to", student.name)
         student.mark = 12
 
 
@@ -23,5 +23,9 @@ class Teacher(Person):
 
 good_student1 = Student("Sasha")
 good_student2 = Student("Slavik")
+teacher = Teacher("Kiril")
 
+teacher.give_mark(good_student1)
+teacher.give_mark(good_student2)
 print(good_student1.mark)
+
